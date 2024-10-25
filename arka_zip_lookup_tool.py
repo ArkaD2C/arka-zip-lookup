@@ -4,7 +4,7 @@ from geopy.geocoders import Nominatim
 import streamlit as st
 
 # Load spreadsheet data
-data = pd.ExcelFile('/mnt/data/D2CARKA_ACTIVE_ZIP_LIST[10.25.2024].xlsx')
+data = pd.ExcelFile('D2CARKA_ACTIVE_ZIP_LIST[10.25.2024].xlsx')
 active_zipcodes = pd.read_excel(data, 'Active Zipcodes')
 zipcode_database = pd.read_excel(data, 'Zipcode Database Lookup')
 
